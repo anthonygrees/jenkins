@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('scm') {
       steps {
-        git(branch: 'master', url: 'https://github.com/jmery/jenkins.git')
+        git(branch: 'master', url: 'https://github.com/anthonygrees/jenkins.git')
       }
     }
     stage('build') {
@@ -23,6 +23,6 @@ pipeline {
   environment {
     HAB_NOCOLORING = 'true'
     HAB_BLDR_URL = 'https://bldr.habitat.sh/'
-    HAB_ORIGIN = 'jmery'
+    HAB_ORIGIN = 'anthonyrees'
   }
 }
